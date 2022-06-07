@@ -1,0 +1,1 @@
+const TimeLimitSec = 15;

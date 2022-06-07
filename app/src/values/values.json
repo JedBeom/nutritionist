@@ -1,0 +1,451 @@
+[
+	{
+		"block_name": "밥류",
+		"foods": [
+			{
+				"name": "흰쌀밥",
+				"love": 2,
+				"calorie": 270,
+				"carbo": 61.0,
+				"protein": 5.0,
+				"fat": 0.7
+			},
+			{
+				"name": "흑미밥",
+				"love": 1,
+				"calorie": 310,
+				"carbo": 70.0,
+				"protein": 6.0,
+				"fat": 0.7
+			},
+			{
+				"name": "현미밥",
+				"love": 1,
+				"calorie": 321,
+				"carbo": 69.0,
+				"protein": 6.3,
+				"fat": 1.5
+			},
+			{
+				"name": "소고기콩나물밥",
+				"love": 3,
+				"calorie": 396,
+				"carbo": 71.94,
+				"protein": 14.35,
+				"fat": 6.81
+			},
+			{
+				"name": "스팸마요덮밥",
+				"love": 4,
+				"calorie": 600,
+				"carbo": 86.0,
+				"protein": 18.0,
+				"fat": 20.0
+			},
+			{
+				"name": "잔치국수",
+				"love": 5,
+				"calorie": 447,
+				"carbo": 83.0,
+				"protein": 21.0,
+				"fat": 4.0
+			},
+			{
+				"name": "우동",
+				"love": 5,
+				"calorie": 375,
+				"carbo": 77.0,
+				"protein": 11.0,
+				"fat": 2.5
+			}
+		]
+	},
+	{
+		"block_name": "국류",
+		"foods": [
+			{
+				"name": "된장찌개",
+				"love": 2,
+				"calorie": 171,
+				"carbo": 16.77,
+				"protein": 15.01,
+				"fat": 5.6
+			},
+			{
+				"name": "라면사리부대찌개",
+				"love": 5,
+				"calorie": 272,
+				"carbo": 21.0,
+				"protein": 19.0,
+				"fat": 13.5
+			},
+			{
+				"name": "콩나물국",
+				"love": 1,
+				"calorie": 41,
+				"carbo": 6.0,
+				"protein": 2.2,
+				"fat": 1.5
+			},
+			{
+				"name": "감자탕",
+				"love": 4,
+				"calorie": 260,
+				"carbo": 20.0,
+				"protein": 22.0,
+				"fat": 10.0
+			},
+			{
+				"name": "오리탕",
+				"love": 3,
+				"calorie": 192,
+				"carbo": 12.0,
+				"protein": 18.0,
+				"fat": 8.0
+			},
+			{
+				"name": "소고기무국",
+				"love": 3,
+				"calorie": 192,
+				"carbo": 12.0,
+				"protein": 16.4,
+				"fat": 8.6
+			},
+			{
+				"name": "미역국",
+				"love": 2,
+				"calorie": 177,
+				"carbo": 16.0,
+				"protein": 15.0,
+				"fat": 6.8
+			},
+			{
+				"name": "닭개장",
+				"love": 5,
+				"calorie": 285,
+				"carbo": 7.3,
+				"protein": 31.4,
+				"fat": 14.6
+			},
+			{
+				"name": "설렁탕",
+				"love": 4,
+				"calorie": 424,
+				"carbo": 42.7,
+				"protein": 32.7,
+				"fat": 13.0
+			},
+			{
+				"name": "오이냉국",
+				"love": 1,
+				"calorie": 15,
+				"carbo": 3.2,
+				"protein": 1.0,
+				"fat": 0.1
+			}
+		]
+	},
+	{
+		"block_name": "주메뉴",
+		"foods": [
+			{
+				"name": "치킨",
+				"love": 5,
+				"calorie": 406,
+				"carbo": 14.0,
+				"protein": 31.2,
+				"fat": 24.2
+			},
+			{
+				"name": "떡볶이",
+				"love": 4,
+				"calorie": 422,
+				"carbo": 59.0,
+				"protein": 16.0,
+				"fat": 15.2
+			},
+			{
+				"name": "돈육김치찜",
+				"love": 4,
+				"calorie": 389,
+				"carbo": 13.16,
+				"protein": 32.87,
+				"fat": 18.0
+			},
+			{
+				"name": "오리훈제오리엔탈야채무침",
+				"love": 4,
+				"calorie": 296,
+				"carbo": 1.0,
+				"protein": 13.0,
+				"fat": 15.0
+			},
+			{
+				"name": "탕수육",
+				"love": 4,
+				"calorie": 295,
+				"carbo": 22.0,
+				"protein": 11.0,
+				"fat": 18.0
+			},
+			{
+				"name": "돈까스",
+				"love": 5,
+				"calorie": 491,
+				"carbo": 24.6,
+				"protein": 51.8,
+				"fat": 19.0
+			},
+			{
+				"name": "오리불고기",
+				"love": 3,
+				"calorie": 280,
+				"carbo": 10.3,
+				"protein": 23.5,
+				"fat": 15.1
+			},
+			{
+				"name": "돈육오븐구이",
+				"love": 1,
+				"calorie": 247,
+				"carbo": 0.0,
+				"protein": 27.0,
+				"fat": 14.6
+			},
+			{
+				"name": "닭갈비",
+				"love": 3,
+				"calorie": 215,
+				"carbo": 15.8,
+				"protein": 14.7,
+				"fat": 9.9
+			},
+			{
+				"name": "안동찜닭(봉추찜닭)",
+				"love": 1,
+				"calorie": 193,
+				"carbo": 15.0,
+				"protein": 13.0,
+				"fat": 7.0
+			}
+		]
+	},
+	{
+		"block_name": "부메뉴",
+		"foods": [
+			{
+				"name": "치즈계란찜",
+				"love": 4,
+				"calorie": 92,
+				"carbo": 1.35,
+				"protein": 6.54,
+				"fat": 6.6
+			},
+			{
+				"name": "어묵볶음",
+				"love": 3,
+				"calorie": 137,
+				"carbo": 15.62,
+				"protein": 7.9,
+				"fat": 5.4
+			},
+			{
+				"name": "연근볶음",
+				"love": 1,
+				"calorie": 48,
+				"carbo": 10.0,
+				"protein": 1.4,
+				"fat": 0.6
+			},
+			{
+				"name": "깍두기",
+				"love": 3,
+				"calorie": 16,
+				"carbo": 3.2,
+				"protein": 0.6,
+				"fat": 0.3
+			},
+			{
+				"name": "김치",
+				"love": 3,
+				"calorie": 13,
+				"carbo": 2.49,
+				"protein": 1.0,
+				"fat": 0.2
+			},
+			{
+				"name": "시금치나물",
+				"love": 2,
+				"calorie": 19,
+				"carbo": 2.05,
+				"protein": 0.9,
+				"fat": 1.0
+			},
+			{
+				"name": "골맹이소면무침",
+				"love": 3,
+				"calorie": 117,
+				"carbo": 13.87,
+				"protein": 11.94,
+				"fat": 1.8
+			},
+			{
+				"name": "진미채볶음",
+				"love": 2,
+				"calorie": 79,
+				"carbo": 6.4,
+				"protein": 3.5,
+				"fat": 5.0
+			},
+			{
+				"name": "도토리묵야채무침",
+				"love": 3,
+				"calorie": 13,
+				"carbo": 2.5,
+				"protein": 0.2,
+				"fat": 0.23
+			},
+			{
+				"name": "브로콜리+초고추장",
+				"love": 2,
+				"calorie": 31,
+				"carbo": 7.1,
+				"protein": 1.1,
+				"fat": 0.12
+			},
+			{
+				"name": "다시마+초고추장",
+				"love": 2,
+				"calorie": 26,
+				"carbo": 6.4,
+				"protein": 0.5,
+				"fat": 0.1
+			},
+			{
+				"name": "가지볶음",
+				"love": 1,
+				"calorie": 17,
+				"carbo": 1.2,
+				"protein": 0.3,
+				"fat": 1.3
+			},
+			{
+				"name": "비트무초절임",
+				"love": 3,
+				"calorie": 12,
+				"carbo": 2.7,
+				"protein": 0.4,
+				"fat": 0.12
+			},
+			{
+				"name": "꽈리고추멸치볶음",
+				"love": 3,
+				"calorie": 62,
+				"carbo": 4.7,
+				"protein": 5.0,
+				"fat": 2.5
+			},
+			{
+				"name": "고추된장무침",
+				"love": 2,
+				"calorie": 27,
+				"carbo": 3.3,
+				"protein": 0.8,
+				"fat": 1.7
+			},
+			{
+				"name": "잡채",
+				"love": 4,
+				"calorie": 209,
+				"carbo": 31.7,
+				"protein": 5.6,
+				"fat": 7.5
+			},
+			{
+				"name": "쫄면",
+				"love": 4,
+				"calorie": 106,
+				"carbo": 21.6,
+				"protein": 2.3,
+				"fat": 0.8
+			},
+			{
+				"name": "양파장아찌",
+				"love": 2,
+				"calorie": 18,
+				"carbo": 3.74,
+				"protein": 0.6,
+				"fat": 0.32
+			},
+			{
+				"name": "전류",
+				"love": 5,
+				"calorie": 176,
+				"carbo": 19.9,
+				"protein": 7.3,
+				"fat": 7.7
+			},
+			{
+				"name": "깻잎장아찌",
+				"love": 3,
+				"calorie": 24,
+				"carbo": 4.3,
+				"protein": 2.0,
+				"fat": 0.5
+			}
+		]
+	},
+	{
+		"block_name": "후식류",
+		"foods": [
+			{
+				"name": "젤리류(제리뽀)",
+				"love": 1,
+				"calorie": 65,
+				"carbo": 16.0,
+				"protein": 0.0,
+				"fat": 0.0
+			},
+			{
+				"name": "워터젤리류",
+				"love": 3,
+				"calorie": 70,
+				"carbo": 18.0,
+				"protein": 0.0,
+				"fat": 0.0
+			},
+			{
+				"name": "혼합음료",
+				"love": 4,
+				"calorie": 65,
+				"carbo": 16.0,
+				"protein": 0.0,
+				"fat": 0.0
+			},
+			{
+				"name": "과일류",
+				"love": 2,
+				"calorie": 14,
+				"carbo": 3.6,
+				"protein": 0.1,
+				"fat": 0.05
+			},
+			{
+				"name": "빵류",
+				"love": 4,
+				"calorie": 205,
+				"carbo": 19.0,
+				"protein": 9.0,
+				"fat": 17.0
+			},
+			{
+				"name": "요거트",
+				"love": 5,
+				"calorie": 205,
+				"carbo": 27.0,
+				"protein": 6.0,
+				"fat": 8.0
+			}
+		]
+	}
+]
