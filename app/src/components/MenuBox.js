@@ -31,7 +31,7 @@ const MenuBoxesScroll = ({foods}) => {
 
     return <ScrollArea>
         {foods.map(f => {
-            return <MenuBox name={f.name} protein={f.protein} calorie={f.calorie} img={null} />
+            return <MenuBox key={f.name} name={f.name} protein={f.protein} calorie={f.calorie} img={null} />
         })}
     </ScrollArea>
 }

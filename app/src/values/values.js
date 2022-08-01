@@ -1,3 +1,4 @@
-import values from "./values.json"
+import foodBlocks from "./foodBlocks.json"
+import texts from "./texts.json"
 
-export default values
+export {foodBlocks, texts}
