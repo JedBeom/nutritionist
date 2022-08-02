@@ -2,14 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Reset } from 'styled-reset'
 import GlobalStyle from 'globalStyle';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.body);
 root.render(
   <React.StrictMode>
-    <Reset/>
-    <GlobalStyle/>
+    <GlobalStyle />
     <App />
   </React.StrictMode>
 );
