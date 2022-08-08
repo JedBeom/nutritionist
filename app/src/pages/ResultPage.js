@@ -17,6 +17,7 @@ const ResultPage = ({selections}) => {
 
     useEffect(() => {
         if (!completeOrNot(selections)) navigate("/")
+        // eslint-disable-next-line
     }, [])
 
 
