@@ -36,7 +36,7 @@ const isOk = (totalCal, totalProtein, totalLove) => {
 }
 
 // judge 함수는 2 = 참 잘했어요, 1 = 합격, 0 = 좀 더 열심히 값을 반환한다.
-const judge = (totalCal, totalProtein, totalLove) => {
+const judge = ({totalCal, totalProtein, totalLove}) => {
     if (isSuperb(totalCal, totalProtein, totalLove)) {
         return 2
     }
@@ -53,10 +53,10 @@ const judge = (totalCal, totalProtein, totalLove) => {
 // b = ( 단백질합계 - 63kcal )
 // c = 선호도 합계
 // 총 점수: (b+5c-a)점
-const calScore = (totalCal, totalProtein, totalLove) => {
-    a = (900 - totalCal) ** 2
-    b = totalProtein - 63
-    c = totalLove
+const calScore = ({totalCal, totalProtein, totalLove}) => {
+    const a = (900 - totalCal) ** 2
+    const b = totalProtein - 63
+    const c = totalLove
     return b+5*c-a
 }
 

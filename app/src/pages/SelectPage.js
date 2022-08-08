@@ -1,9 +1,25 @@
+import StickyBottomArticle from "components/FloatBottom"
 import FoodSelection from "components/FoodSelection"
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
+import { completeOrNot, getTotals } from "system/total"
 import { foodBlocks } from "values/values"
 
-const SelectPage = () => {
-    const [selections, setSelections] = useState([-1, -1, -1, -1, -1, -1])
+const SelectPage = ({selections, setSelections}) => {
+    const [totals, setTotals] = useState({totalCal: 0, totalProtein: 0, totalLove: 0})
+    const navigate = useNavigate()
+
+    const goResult = () => {
+        if (!completeOrNot(selections)) {
+            alert("아직 고르지 않은 메뉴가 있습니다!")
+            return
+        }
+        navigate("/loading")
+    }
+
+    useEffect(() => {
+        setTotals(getTotals(foodBlocks, selections))
+    }, [selections])
 
     return <>
     <header>
@@ -16,13 +32,21 @@ const SelectPage = () => {
         {foodBlocks.map((block, i) => {
             return <FoodSelection key={i} blockIndex={i} block={block} selections={selections} setSelections={setSelections} />
         })}
-        {selections.map((selection, i) => {
-            if (selection === -1) return null
-            return <article>
-                <h4>{foodBlocks[i].block_name}</h4>
-                {foodBlocks[i].foods[selection].name}
-            </article>
-        })}
+        <section>
+            <h2>식단 확인</h2>
+            {selections.map((selection, i) => {
+                if (selection === -1) return null
+                return <article>
+                    <h4>{foodBlocks[i].block_name}</h4>
+                    {foodBlocks[i].foods[selection].name} — {foodBlocks[i].foods[selection].calorie}kcal
+                </article>
+            })}
+            <button onClick={goResult}>완성!</button> 
+        </section>
+        <StickyBottomArticle>
+            <h3>칼로리 총합: {totals.totalCal}</h3>
+            <progress value={totals.totalCal} max="1000" />
+        </StickyBottomArticle>
     </main>
     </>
 }
