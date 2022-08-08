@@ -27,6 +27,10 @@ const ResultPage = ({selections}) => {
     </header>
     <main>
         <section>
+            <h2>나의 점수</h2>
+            <Score>{calScore(totals).toFixed(1)}점</Score>
+        </section>
+        <section>
             <h2>내가 짠 식단</h2>
             <ul>
             {selections.map((selection, i) => {
@@ -35,11 +39,8 @@ const ResultPage = ({selections}) => {
                     {foodBlocks[i].block_name}: {foodBlocks[i].foods[selection].name}
                 </li>
             })}
+            <li>칼로리 총합: {totals.totalCal}kcal</li>
             </ul>
-        </section>
-        <section>
-            <h2>나의 점수</h2>
-            <Score>{calScore(totals).toFixed(1)}점</Score>
         </section>
         <section>
             <h2>학교의 평가</h2>
@@ -49,7 +50,7 @@ const ResultPage = ({selections}) => {
     </main>
     <footer>
         <p>제작: 범우주</p>
-        <p>Special Thanks: 김유빈</p>
+        <p>영양 데이터 제공: 김유빈</p>
     </footer>
     </>
 }

@@ -49,12 +49,12 @@ const judge = ({totalCal, totalProtein, totalLove}) => {
 }
 
 // calScore 함수는 점수를 계산한다
-// a = (900 - 칼로리합계)^2
+// a = |900 - 칼로리합계| (절댓값)
 // b = ( 단백질합계 - 63kcal )
 // c = 선호도 합계
 // 총 점수: (b+5c-a)점
 const calScore = ({totalCal, totalProtein, totalLove}) => {
-    const a = (900 - totalCal) ** 2
+    const a = Math.abs(900 - totalCal)
     const b = totalProtein - 63
     const c = totalLove
     return b+5*c-a
