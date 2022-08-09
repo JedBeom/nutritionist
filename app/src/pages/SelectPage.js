@@ -25,7 +25,7 @@ const SelectPage = ({selections, setSelections}) => {
     <header>
         <hgroup>
             <h1>영양사 시뮬레이터</h1>
-            <h2>영양소, 선호도에 따라 식단을 짜보자!</h2>
+            <h2>칼로리, 단백질, 선호도를 신경쓰며 식단을 짜보자! 칼로리는 900kcal에 가깝게 구성해보자.</h2>
         </hgroup>
     </header> 
     <main>
@@ -44,7 +44,7 @@ const SelectPage = ({selections, setSelections}) => {
             <button onClick={goResult}>완성!</button> 
         </section>
         <StickyBottomArticle>
-            <h3>칼로리 총합: {totals.totalCal}</h3>
+            <h4>선택한 칼로리 총합: {totals.totalCal}kcal</h4>
             <progress value={totals.totalCal} max="1000" />
         </StickyBottomArticle>
     </main>
