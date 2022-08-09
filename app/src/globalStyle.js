@@ -8,6 +8,10 @@ html {
 * {
     user-select: none;
 }
+
+:root {
+    --font-family: "Galmuri11", system-ui, sans-serif !important;
+}
 `
 
 export default GlobalStyle

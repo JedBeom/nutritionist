@@ -14,6 +14,10 @@ const SelectPage = ({selections, setSelections}) => {
             alert("아직 고르지 않은 메뉴가 있습니다!")
             return
         }
+        if (selections[3] === selections[4]) {
+            alert("부메뉴끼리는 선택이 달라야 합니다!")
+            return
+        }
         navigate("/loading")
     }
 
