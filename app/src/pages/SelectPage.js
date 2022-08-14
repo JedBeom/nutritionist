@@ -10,10 +10,6 @@ const SelectPage = ({selections, setSelections}) => {
     const navigate = useNavigate()
 
     const goResult = () => {
-        if (!completeOrNot(selections)) {
-            alert("아직 고르지 않은 메뉴가 있습니다!")
-            return
-        }
         if (selections[3] === selections[4]) {
             alert("부메뉴끼리는 선택이 달라야 합니다!")
             return
@@ -37,7 +33,7 @@ const SelectPage = ({selections, setSelections}) => {
             return <FoodSelection key={i} blockIndex={i} block={block} selections={selections} setSelections={setSelections} />
         })}
         <section>
-            <h2>식단 확인</h2>
+            <h2>선택한 식단 확인</h2>
             {selections.map((selection, i) => {
                 if (selection === -1) return null
                 return <article>
@@ -45,7 +41,9 @@ const SelectPage = ({selections, setSelections}) => {
                     {foodBlocks[i].foods[selection].name} — {foodBlocks[i].foods[selection].calorie}kcal
                 </article>
             })}
-            <button onClick={goResult}>완성!</button> 
+            <button disabled={!completeOrNot(selections)} onClick={goResult}>
+                {completeOrNot(selections) ? "완성!" : "아직 선택하지 않은 항목이 있습니다."}    
+            </button> 
         </section>
         <StickyBottomArticle>
             <h4>선택한 칼로리 총합: {totals.totalCal}kcal</h4>
