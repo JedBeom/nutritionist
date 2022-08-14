@@ -43,7 +43,7 @@ const ResultPage = ({selections}) => {
             </ul>
         </section>
         <section>
-            <h2>학교의 평가</h2>
+            <h2>🏫 학교의 평가</h2>
             <JudgeMsg>{judgeMsg(totals)}</JudgeMsg>
         </section>
         <RateImg src={`/images/rate_${judge(totals)}.png`} alt="결과 이미지" draggable="false"/>

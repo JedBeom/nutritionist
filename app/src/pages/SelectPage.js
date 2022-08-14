@@ -11,7 +11,7 @@ const SelectPage = ({selections, setSelections}) => {
 
     const goResult = () => {
         if (selections[3] === selections[4]) {
-            alert("부메뉴끼리는 선택이 달라야 합니다!")
+            alert("⚠️ 부메뉴끼리는 선택이 달라야 합니다!")
             return
         }
         navigate("/loading")
@@ -33,7 +33,7 @@ const SelectPage = ({selections, setSelections}) => {
             return <FoodSelection key={i} blockIndex={i} block={block} selections={selections} setSelections={setSelections} />
         })}
         <section>
-            <h2>선택한 식단 확인</h2>
+            <h2>✅ 선택한 식단 확인</h2>
             {selections.map((selection, i) => {
                 if (selection === -1) return null
                 return <article>
