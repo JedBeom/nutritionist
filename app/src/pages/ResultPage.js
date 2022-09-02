@@ -36,7 +36,7 @@ const ResultPage = ({selections}) => {
             {selections.map((selection, i) => {
                 if (selection === -1) return null
                 return <li>
-                    {foodBlocks[i].block_name}: {foodBlocks[i].foods[selection].name}
+                    {foodBlocks[i].block_name}: {foodBlocks[i].foods[selection].name}({selection})
                 </li>
             })}
             <li>칼로리 총합: {totals.totalCal}kcal</li>
