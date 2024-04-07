@@ -50,7 +50,7 @@ const ResultPage = ({selections}) => {
     </main>
     <footer>
         <p>제작: 범우주</p>
-        <p>영양 데이터 제공: 김유빈</p>
+        <p>영양 데이터 제공: 단비</p>
     </footer>
     </>
 }
